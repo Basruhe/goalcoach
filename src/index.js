@@ -6,8 +6,16 @@ import App from "./components/App";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 
+// const App = () => (
+//   <Switch>
+//     <Route exact path="/" component={Home} />
+//     <Route path="/about" component={About} />
+//     <Route path="/contact" component={Contact} />
+//   </Switch>
+
+// Not functional. This is an outdated method, and requires updating
 ReactDOM.render(
-  <Router path="/" history={browserhistory}>
+  <Router path="/" history={browserHistory}>
     <Route path="/app" component={App} />
     <Route path="/signin" component={SignIn} />
     <Route path="/signup" component={SignUp} />
