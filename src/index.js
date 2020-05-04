@@ -1,4 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Router, Route, browserHistory } from "react-router";
 
-ReactDOM.render(<div>App</div>, document.getElementById("root"));
+import App from "./components/App";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
+
+ReactDOM.render(
+  <Router path="/" history={browserhistory}>
+    <Route path="/app" component={App} />
+    <Route path="/signin" component={SignIn} />
+    <Route path="/signup" component={SignUp} />
+  </Router>,
+  document.getElementById("root")
+);
