@@ -13,12 +13,12 @@ import SignUp from "./components/SignUp";
 //     <Route path="/contact" component={Contact} />
 //   </Switch>
 
-// Not functional. This is an outdated method, and requires updating
+// Not functional. This is an outdated method, and requires updating! Use reader
 ReactDOM.render(
-  <Router path="/" history={browserHistory}>
-    <Route path="/app" component={App} />
-    <Route path="/signin" component={SignIn} />
-    <Route path="/signup" component={SignUp} />
-  </Router>,
+  // <Router path="/" history={browserHistory}>
+  //   <Route path="/app" component={App} />
+  //   <Route path="/signin" component={SignIn} />
+  //   <Route path="/signup" component={SignUp} />
+  // </Router>,
   document.getElementById("root")
 );
