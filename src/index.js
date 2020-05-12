@@ -6,6 +6,8 @@ import App from "./components/App";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 
+// Test
+
 // const App = () => (
 //   <Switch>
 //     <Route exact path="/" component={Home} />
